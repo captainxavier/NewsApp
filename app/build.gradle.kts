@@ -22,6 +22,7 @@ android {
         }
     }
 
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -77,6 +78,7 @@ dependencies {
 
     //Dagger Hilt
     implementation(libs.dagger.hilt)
+    implementation(libs.core.ktx)
     ksp(libs.dagger.hilt.compiler)
 
     //Navigation hilt
@@ -109,4 +111,11 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    //mockito
+    testImplementation(libs.mockito)
+    testImplementation(libs.mockitoKotlin)
+    testImplementation(libs.mockK)
+    //TRUTH
+    testImplementation(libs.truth)
+    androidTestImplementation(libs.truth)
 }
