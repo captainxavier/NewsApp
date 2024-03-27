@@ -2,7 +2,16 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="LocalUserManagerImplTest">
+        <State />
+      </entry>
       <entry key="app">
+        <State />
+      </entry>
+      <entry key="readAppEntryEmitsFalseIfDataDoesNotExist()">
+        <State />
+      </entry>
+      <entry key="saveAppEntrySavesTrueToDataStore()">
         <State />
       </entry>
     </value>
