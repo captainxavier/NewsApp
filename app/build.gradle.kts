@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.devToolsKsp)
     alias(libs.plugins.daggerHilt)
+    alias(libs.plugins.kotlinParcelize)
 }
 
 android {
@@ -43,7 +44,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.11"
     }
     packaging {
         resources {
@@ -53,9 +54,10 @@ android {
 }
 
 dependencies {
-    //Material
+    //Material3
     implementation(libs.androidx.material3)
-
+    //Material Icon
+    implementation(libs.material.icon)
     //Compose
     implementation(libs.androidx.compose.foundation)
     implementation(libs.androidx.activity.compose)

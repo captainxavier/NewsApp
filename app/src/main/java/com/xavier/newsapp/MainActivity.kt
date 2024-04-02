@@ -9,15 +9,23 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.lifecycle.lifecycleScope
+import com.xavier.newsapp.data.local.dao.NewsDao
+import com.xavier.newsapp.data.local.entities.toEntity
+import com.xavier.newsapp.domain.models.news.Article
+import com.xavier.newsapp.domain.models.news.Source
 import com.xavier.newsapp.presentation.nav_graph.NavGraph
 import com.xavier.newsapp.ui.theme.NewsAppTheme
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     private val TAG = "MainActivity"
     private val viewModel by viewModels<MainViewModel>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         installSplashScreen().apply {

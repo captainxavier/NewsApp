@@ -4,4 +4,5 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
     alias(libs.plugins.devToolsKsp) apply false
     alias(libs.plugins.daggerHilt) apply  false
+    alias(libs.plugins.kotlinParcelize) apply false
 }

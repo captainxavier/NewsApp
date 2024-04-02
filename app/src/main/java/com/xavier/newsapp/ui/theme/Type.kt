@@ -11,10 +11,8 @@ import com.xavier.newsapp.R
 
 val lato = FontFamily(
     Font(R.font.lato_black, FontWeight.Black),
-    Font(R.font.lato_black_italic, FontWeight.Black),
-    Font(R.font.lato_bold_italic, FontWeight.Bold),
     Font(R.font.lato_bold, FontWeight.Bold),
-    Font(R.font.lato_italic, FontWeight.Normal),
+    Font(R.font.lato_bold, FontWeight.SemiBold),
     Font(R.font.lato_regular, FontWeight.Normal),
 )
 
@@ -29,28 +27,28 @@ val Typography = Typography(
     ),
     displayMedium = TextStyle(
         fontFamily = lato,
-        fontWeight = FontWeight.Black,
+        fontWeight = FontWeight.SemiBold,
         fontSize = 45.sp,
         lineHeight = 52.sp,
         letterSpacing = 0.sp
     ),
     displaySmall = TextStyle(
         fontFamily = lato,
-        fontWeight = FontWeight.Black,
+        fontWeight = FontWeight.Bold,
         fontSize = 36.sp,
         lineHeight = 44.sp,
         letterSpacing = 0.sp
     ),
     headlineLarge = TextStyle(
         fontFamily = lato,
-        fontWeight = FontWeight.Bold,
+        fontWeight = FontWeight.Black,
         fontSize = 32.sp,
         lineHeight = 40.sp,
         letterSpacing = 0.sp
     ),
     headlineMedium = TextStyle(
         fontFamily = lato,
-        fontWeight = FontWeight.Bold,
+        fontWeight = FontWeight.SemiBold,
         fontSize = 28.sp,
         lineHeight = 36.sp,
         letterSpacing = 0.sp
@@ -64,7 +62,7 @@ val Typography = Typography(
     ),
     titleLarge = TextStyle(
         fontFamily = lato,
-        fontWeight = FontWeight.SemiBold,
+        fontWeight = FontWeight.Black,
         fontSize = 22.sp,
         lineHeight = 28.sp,
         letterSpacing = 0.sp
@@ -78,7 +76,7 @@ val Typography = Typography(
     ),
     titleSmall = TextStyle(
         fontFamily = lato,
-        fontWeight = FontWeight.SemiBold,
+        fontWeight = FontWeight.Bold,
         fontSize = 14.sp,
         lineHeight = 20.sp,
         letterSpacing = 0.1.sp

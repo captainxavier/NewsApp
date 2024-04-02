@@ -18,16 +18,20 @@ coil = "2.5.0"
 datastore = "1.0.0"
 paging = "3.2.1"
 room = "2.6.1"
-foundation ="1.6.4"
+foundation = "1.6.4"
 mockito = "5.11.0"
-mockitoKotlin="5.2.1"
-mockk="1.13.10"
-truth="1.4.2"
+mockitoKotlin = "5.2.1"
+mockk = "1.13.10"
+truth = "1.4.2"
 coreKtxVersion = "1.5.0"
+materialIcon = "1.6.4"
+parcelize = "1.9.23"
 
 [libraries]
 #Material
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+#Material Icon
+material-icon = { group = "androidx.compose.material", name = "material-icons-extended-android", version.ref = "materialIcon" }
 #compose
 androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "foundation" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
@@ -71,11 +75,11 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 #Mockito
-mockito={group="org.mockito", name="mockito-core", version.ref="mockito"}
-mockitoKotlin={group="org.mockito.kotlin", name="mockito-kotlin", version.ref="mockitoKotlin"}
-mockK={group="io.mockk", name="mockk", version.ref="mockk"}
+mockito = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+mockitoKotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
+mockK = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 #truth
-truth={group="com.google.truth",name="truth",version.ref="truth"}
+truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
 core-ktx = { group = "androidx.test", name = "core-ktx", version.ref = "coreKtxVersion" }
 
 [plugins]
@@ -83,4 +87,5 @@ androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 devToolsKsp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlinParcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "parcelize" }
 
